@@ -15,4 +15,11 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
+router.get('/testpage1', (req, res) =>
+  res.render('testpage1', {
+    user: req.user
+  })
+);
+
+
 module.exports = router;

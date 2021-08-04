@@ -1,0 +1,17 @@
+
+
+<% if (user) { %>
+    <h1 class="mt-4">THIS IS Page 1</h1>
+    <p class="lead mb-3">Welcome <%= user.name %></p>
+    <p class="lead mb-3"> <%= user.email %></p>
+    <p class="lead mb-3"> <%= user.password %></p>
+    <a href="/users/logout" class="btn btn-secondary">Logout</a>
+<% }else { %>
+
+    <h1 class="mt-4">THIS IS Page 1 ONly</h1>
+
+<% }  %>
+ 
+
+
+
